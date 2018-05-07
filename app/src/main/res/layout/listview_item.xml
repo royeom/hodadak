@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="15dp"
+        android:textColor="#157b84"
+        android:id="@+id/list_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Path"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:id="@+id/list_path"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        android:textSize="15dp"
+        android:id="@+id/list_time"/>
+
+</LinearLayout>
