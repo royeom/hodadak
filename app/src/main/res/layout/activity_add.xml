@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="경로이름"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/eT_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="7dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_start"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="출발지"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="72dp" />
+
+        <EditText
+            android:id="@+id/eT_start"
+            android:layout_width="213dp"
+            android:layout_height="55dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="53dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도착지"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="118dp" />
+
+        <EditText
+            android:id="@+id/eT_end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="100dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이용시간"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <Spinner
+            android:id="@+id/check_day"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="175dp" />
+
+        <EditText
+            android:id="@+id/check_time"
+            android:layout_width="116dp"
+            android:layout_height="45dp"
+            android:ems="10"
+            android:inputType="time"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="172dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <HorizontalScrollView
+            android:layout_width="368dp"
+            android:layout_height="49dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="225dp">
+
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="ADD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="368dp"
+            android:layout_height="221dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="282dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
