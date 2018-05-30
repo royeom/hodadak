@@ -13,6 +13,7 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.RemoteViews;
 
@@ -40,6 +41,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.mainAddBtn).setOnClickListener(
+                new Button.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(), AddPath.class);
+                        startActivity(intent);
+
+                    }
+                }
+        );
+
         String[] strDate = {"월요일 08:00", "화요일 09:00", "수요일 10:00", "목요일 09:00", "금요일 10:00"};
 
         ArrayList<ItemData> oData = new ArrayList<>();
@@ -56,6 +69,8 @@ public class MainActivity extends AppCompatActivity {
         m_oListView = (ListView)findViewById(R.id.listView);
         ListAdapter oAdapter = new ListAdapter(oData);
         m_oListView.setAdapter(oAdapter);
+
+
     }
 
     // 기본 알림
@@ -144,4 +159,5 @@ public class MainActivity extends AppCompatActivity {
         return builder;
 
     }
+
 }
