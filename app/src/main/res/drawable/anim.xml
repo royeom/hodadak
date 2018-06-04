@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false">
+
+    <!-- oneshot = true면 한번만 false 면 무한반복 -->
+    <item android:drawable="@drawable/splash01"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash02"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash03"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash04"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash05"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash06"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash07"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash08"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash09"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash10"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash11"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash12"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash13"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash14"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash15"
+        android:duration="50"/>
+    <item android:drawable="@drawable/splash16"
+        android:duration="50"/>
+
+
+</animation-list>

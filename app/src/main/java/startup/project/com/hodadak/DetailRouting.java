@@ -30,10 +30,5 @@ public class DetailRouting extends Activity {
             }
         });
 
-
-
-
-
-
     }
 }
