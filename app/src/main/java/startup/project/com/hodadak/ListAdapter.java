@@ -10,6 +10,23 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+/*
+    // DB에서 SELECT로 특정 name을 가진 것을 찾아오는 코드.
+        DbOpenHelper mDbOpenHelper = new DbOpenHelper(this);
+        mDbOpenHelper.open();
+        mDbOpenHelper.create();
+
+        Cursor iCursor = mDbOpenHelper.selectColumns();
+        while(iCursor.moveToNext()){
+        String tempID = iCursor.getString(iCursor.getColumnIndex("userid"));
+        String tempName = iCursor.getString(iCursor.getColumnIndex("name"));
+        String tempAge = iCursor.getString(iCursor.getColumnIndex("age"));
+        String tempGender = iCursor.getString(iCursor.getColumnIndex("gender"));
+        if(tempName.equals("John"){
+        String Result = tempID + "," +tempName + "," + tempAge + "," + tempGender;
+        }
+        }
+*/
 public class ListAdapter extends BaseAdapter{
 
     LayoutInflater inflater = null;
