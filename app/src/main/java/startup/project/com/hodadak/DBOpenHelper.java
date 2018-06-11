@@ -114,10 +114,12 @@ public class DBOpenHelper {
     }
 
     public boolean deletePathColumn(long pathid){
+
         return mDB.delete(DataBases.CreateDB._TABLENAME0, "pathid=" + pathid, null) > 0;
     }
 
     public boolean deletePathTimeColumn(long pathid){
         return mDB.delete(DataBases.CreateDB._TABLENAME1, "pathid=" + pathid, null) > 0;
+
     }
 }
