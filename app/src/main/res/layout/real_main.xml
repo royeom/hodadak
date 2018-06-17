@@ -86,15 +86,7 @@
                 android:textStyle="bold"
                 />
 
-            <ImageView
-                android:id="@+id/imageView02"
-                android:layout_width="300px"
-                android:layout_height="100px"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:src="@drawable/rogo"
-                android:background="@color/Beige"/>
-        </LinearLayout>
+
 
 
         <LinearLayout
