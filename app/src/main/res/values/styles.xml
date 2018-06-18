@@ -9,8 +9,8 @@
     </style>
 
     <style name="MyButton" parent="Theme.AppCompat.Light">
-        <item name="colorControlHighlight">@color/DodgerBlue</item>
-        <item name="colorButtonNormal">@color/RoyalBlue</item>
+        <item name="colorControlHighlight">@color/Teal</item>
+        <item name="colorButtonNormal">@color/white</item>
     </style>
     <style name="Divider">
         <item name="android:layout_width">match_parent</item>
