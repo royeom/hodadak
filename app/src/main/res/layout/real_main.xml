@@ -98,7 +98,7 @@
                 android:id="@+id/textView06"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="<군자 - 국민대> 도착시간 8시" />
+                android:text="군자 - 국민대 도착시간 8시" />
             <TextView
                 android:id="@+id/textView0"
                 android:layout_width="wrap_content"
