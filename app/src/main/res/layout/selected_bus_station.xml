@@ -7,23 +7,30 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="출발지와 도착지를 선택합니다."
-        android:textColor="#841526"/>
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="출발지와 도착지를 선택합니다."
+            android:textColor="#841526"/>
 
+        <Button
+            android:id="@+id/SBS_setBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="설정 완료"
+            android:textColor="#157b84" />
+    </LinearLayout>
     <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="30dp"
         android:id="@+id/listView_station">
     </ListView>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="설정 완료"
-        android:textColor="#157b84"
-        android:id="@+id/SBS_setBtn"
-        android:layout_gravity="end"/>
+
 </LinearLayout>

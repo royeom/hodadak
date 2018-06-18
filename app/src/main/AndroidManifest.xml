@@ -18,9 +18,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectBus"/>
+        <activity android:name=".RealMain"/>
+
         <activity android:name=".MainActivity"/>
         <activity android:name=".AddPath"/>
+        <activity android:name=".SelectBus"/>
         <activity android:name=".DetailRouting"/>
         <activity android:name=".BusStation"/>
         <activity android:name=".WeatherActivity"/>

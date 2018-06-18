@@ -48,13 +48,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="130번   4분(2정거장, 혼잡)  10분(6정거장, 보통)"
-           />
+            />
         <TextView
             android:id="@+id/textView08"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="370번   3분(1정거장, 혼잡)  15분(8정거장, 여유)"
-     />
+            />
 
         <View
             android:layout_width="370dp"
@@ -190,41 +190,42 @@
             android:layout_width="wrap_content"
             android:layout_height="180px"
             android:layout_gravity="center_vertical|center_horizontal"
-            android:layout_weight="1"
+            android:layout_weight="1"/>
 
-            android:src="@drawable/b" />
+            //android:src="@drawable/b"
+
     </LinearLayout>
 
 
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/basicBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
->
-            <Button
-                android:id="@+id/basicBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="홈"
-                android:backgroundTint="@color/teal" />
+            android:layout_weight="1"
+            android:text="홈"
+            android:backgroundTint="@color/teal" />
 
-            <Button
-                android:id="@+id/expandedBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="경로관리"
-                android:theme="@style/MyButton" />
+        <Button
+            android:id="@+id/expandedBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="경로관리"
+            android:theme="@style/MyButton" />
 
-            <Button
-                android:id="@+id/customBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="설정"
-                android:theme="@style/MyButton" />
-        </LinearLayout>
+        <Button
+            android:id="@+id/customBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="설정"
+            android:theme="@style/MyButton" />
+    </LinearLayout>
 
 
 </LinearLayout>
