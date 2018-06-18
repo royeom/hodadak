@@ -52,6 +52,16 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+        findViewById(R.id.home_btn).setOnClickListener(
+                new Button.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(), RealMain.class);
+                        startActivity(intent);
+
+                    }
+                }
+        );
         findViewById(R.id.weather_btn).setOnClickListener(
                 new Button.OnClickListener() {
                     @Override

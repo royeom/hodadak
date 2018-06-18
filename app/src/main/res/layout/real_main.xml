@@ -7,14 +7,116 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:orientation="horizontal"
+        android:background="@color/DarkGray"
+
+        >
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  [현재 경로] 군자 - 국민대                             도착 목표 8:55"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="15dip"
+        >
+        <TextView
+            android:id="@+id/textView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="도착 예정 8:44"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[군자교 사거리]"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="130번   4분(2정거장, 혼잡)  10분(6정거장, 보통)"
+            />
+        <TextView
+            android:id="@+id/textView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="370번   3분(1정거장, 혼잡)  15분(8정거장, 여유)"
+            />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="#000" />
+        <TextView
+            android:id="@+id/textView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[군자교 군자 하나 은행 앞]"
+            />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="721번   1분(2정거장, 여유)  7분(3정거장, 여유)"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="370dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:background="#000" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[군자역]"
+            />
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="121번   15분(3정거장, 여유)  30분(6정거장, 여유)"
+            android:textStyle="bold" />
+    </LinearLayout>
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160px"
+        android:layout_height="70px"
         android:orientation="horizontal"
-        android:background="@color/PaleTurquoise"
+        android:background="@color/DarkGray"
         >
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  [날씨 정보]"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/white"
+        android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -26,18 +128,17 @@
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="    날씨 정보"
-                android:textStyle="bold"
-                />
+                android:text="    "
+                android:textStyle="bold" />
 
             <ImageView
                 android:id="@+id/imageView01"
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_weight="1"
+                android:layout_width="150px"
+                android:layout_height="150px"
                 android:layout_gravity="center_vertical|center_horizontal"
-                android:src="@drawable/rain"
-                android:background="@color/Beige"/>
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:src="@drawable/rain" />
         </LinearLayout>
 
 
@@ -46,17 +147,20 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/textView02"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="" />
+
             <TextView
                 android:id="@+id/textView03"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="비! 우산을 챙기세요."
-                android:textColor="@color/DarkSalmon"/>
+                android:text="기온       23도"
+                android:textColor="@color/DarkSalmon" />
+
             <TextView
                 android:id="@+id/textView04"
                 android:layout_width="wrap_content"
@@ -65,110 +169,53 @@
         </LinearLayout>
     </LinearLayout>
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="160px"
+        android:layout_height="50px"
         android:orientation="horizontal"
-        android:background="@color/LightCoral"
-        >
+        android:background="@color/DarkGray">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/textView05"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="    이용할 경로 정보"
-                android:textStyle="bold"
-                />
-
-            <ImageView
-                android:id="@+id/imageView02"
-                android:layout_width="300px"
-                android:layout_height="100px"
-                android:layout_weight="1"
-                android:layout_gravity="center_vertical|center_horizontal"
-                android:src="@drawable/rogo"
-                android:background="@color/Beige"/>
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
-            <TextView
-                android:id="@+id/textView06"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="군자 - 국민대 도착시간 8시" />
-            <TextView
-                android:id="@+id/textView0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" "
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/textView07"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="130번  4분 | 10분"
-                android:textColor="@color/white"/>
-            <TextView
-                android:id="@+id/textView08"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="370번  지연!!"
-                android:textColor="@color/DodgerBlue"/>
-        </LinearLayout>
     </LinearLayout>
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-        <TextView
-            android:id="@+id/textView09"
+
+        <ImageView
+            android:id="@+id/imageView02"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="    곧 이용할 경로 목록" />
+            android:layout_height="180px"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_weight="1"/>
+
+            //android:src="@drawable/b"
 
     </LinearLayout>
-    <View
-        android:layout_width="370dp"
-        android:layout_height="1dp"
-        android:layout_gravity="center_vertical|center_horizontal"
-        android:background="#000"/>
 
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="284dp"></ListView>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
+        android:orientation="horizontal"
+        >
         <Button
             android:id="@+id/basicBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Basic"
-            android:theme="@style/MyButton" />
+            android:text="홈"
+            android:backgroundTint="@color/teal" />
 
         <Button
             android:id="@+id/expandedBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Expand"
+            android:text="경로관리"
             android:theme="@style/MyButton" />
 
         <Button
@@ -176,7 +223,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Custom"
+            android:text="설정"
             android:theme="@style/MyButton" />
     </LinearLayout>
+
+
 </LinearLayout>

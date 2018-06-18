@@ -11,19 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity">
+        <activity android:name=".SelectBus">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SelectBus"/>
+        <activity android:name=".RealMain"/>
+
         <activity android:name=".MainActivity"/>
         <activity android:name=".AddPath"/>
+
         <activity android:name=".DetailRouting"/>
         <activity android:name=".BusStation"/>
         <activity android:name=".WeatherActivity"/>
+        <activity android:name=".SplashScreenActivity"/>
     </application>
     <uses-permission android:name = "android.permission.INTERNET"/>
 </manifest>
