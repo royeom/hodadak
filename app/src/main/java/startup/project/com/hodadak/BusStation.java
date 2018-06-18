@@ -26,8 +26,7 @@ public class BusStation extends Activity {
     EditText edit;
     TextView text;
     ArrayList<StationItemData> data;
-    public static ArrayList<String> stationInfo;
-    HashMap<Integer, String> map = new HashMap<Integer, String>();
+    public static HashMap<Integer, String> map = new HashMap<Integer, String>();
     String busID;
 
     private ListView stationListView = null;
@@ -50,7 +49,6 @@ public class BusStation extends Activity {
         });
 
         new Thread(new Runnable() {
-
             @Override
             public void run() {
                 // TODO Auto-generated method stub
@@ -65,33 +63,13 @@ public class BusStation extends Activity {
                         stationListView = (ListView)findViewById(R.id.listView_station);
                         StationListAdapter sAdapter = new StationListAdapter(data);
                         stationListView.setAdapter(sAdapter);
-
-                        stationListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                            @Override
-                            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                                if(map.containsKey(position)){
-                                    map.remove(position);
-                                    System.out.println("선택되어있습니다.");
-
-                                }else{
-                                    map.put(position, data.get(position).stationName);
-                                    System.out.println("Station 이름  :   " + data.get(position).stationName);
-                                }
-
-                            }
-                        });
                     }
                 });
 
             }
         }).start();
 
-
-
     }
-
-
 
     String getBusRouteId() {
         StringBuffer buffer = new StringBuffer();
