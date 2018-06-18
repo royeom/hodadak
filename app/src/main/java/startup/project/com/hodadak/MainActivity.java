@@ -52,6 +52,16 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+        findViewById(R.id.weather_btn).setOnClickListener(
+                new Button.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(getApplicationContext(), WeatherActivity.class);
+                        startActivity(intent);
+
+                    }
+                }
+        );
 
         String[] strDate = {"월요일 08:00", "화요일 09:00", "수요일 10:00", "목요일 09:00", "금요일 10:00"};
 

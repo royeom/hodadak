@@ -23,6 +23,7 @@
         <activity android:name=".AddPath"/>
         <activity android:name=".DetailRouting"/>
         <activity android:name=".BusStation"/>
+        <activity android:name=".WeatherActivity"/>
     </application>
     <uses-permission android:name = "android.permission.INTERNET"/>
 </manifest>
